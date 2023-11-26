@@ -1,102 +1,68 @@
 [
   {
-    "name": "Uhádni lokaci",
+    "name": "Která trasa je zachycena na fotkách?",
     "imageName": "1.jpg",
     "options": {
-      "1": "Fügnerka",
-      "2": "Žižkov",
-      "3": "Liberec"
+      "1": "Modrá – Nová poutní cesta (mezi bílou Kuchyní a Ferdinantovem)",
+      "2": "Červená – NS Oldřichovské bučiny (mezi Oldřichovským sedlem a Špičákem)",
+      "3": "Fialová – Štolpišká cesta (mezi Ferdinandovem a Hejnicemi) "
     },
-    "correct": "1"
+    "correct": "1",
+    "incorrectStatus": "Bohužel ne, jedná se o Novou poutní cestu, která je vyhlášena svými vodopády –  Štolpichy."
   },
   {
-    "name": "Kdo je to?",
+    "name": "V těsné blízkosti, jakého města můžeme nalézt tyto útvary?",
     "imageName": "2.jpg",
     "options": {
-      "1": "Albert Einstein",
-      "2": "Isaac Newton",
-      "3": "Galileo Galilei"
+      "1": "Nového Města pod Smrkem",
+      "2": "Oldřichova v Hájích",
+      "3": "Hejnic"
     },
-    "correct": "1"
+    "correct": "2",
+    "incorrectStatus": "Bohužel ne, správnou odpovědí je v blízkosti Oldřichova v Hájích. Na pro navštívení těchto úkazů bychom Vám rádi doporučili trasu č. 2 v našem menu s doporučenými trasami."
   },
   {
-    "name": "Jaký je název tohoto obrazu?",
+    "name": "Jakou vyhlídku charakterizují tyto fotografie?",
     "imageName": "3.jpg",
     "options": {
-      "1": "Mona Lisa",
-      "2": "Guernica",
-      "3": "Starry Night"
+      "1": "Ořešník",
+      "2": "Špičák",
+      "3": "Smrk"
     },
-    "correct": "1"
+    "correct": "1",
+    "incorrectStatus": "Bohužel ne, správnou odpovědí je Ořešník, ze kterého se vám naskytne krásný výhled na přilehlé město Hejnice. Návštěvu je vhodné je zkombinovat ještě s výletem kolem Štolpišských vodopádů a vstupem do zdejšího kláštěra."
   },
   {
-    "name": "Kde se nachází tato stavba?",
+    "name": "Které dvě vyhlídky a vodopády poblíž nich, mohou být znázorněné na fotkách?",
     "imageName": "4.jpg",
     "options": {
-      "1": "Paříž",
-      "2": "Londýn",
-      "3": "New York"
+      "1": "Špičák a Ořešník",
+      "2": "Frýdlantské Cimbuří a Hajní Kostel",
+      "3": "Ořešník a Hejnické Cimbuří"
     },
-    "correct": "1"
+    "correct": "2",
+    "incorrectStatus": "Bohužel ne, správnou odpovědí je “Frýdlantské Cimbuří a Hájní Kostel”. Tyto dvě krásné vyhlídky jsou hodně blízko od sebe, a tak je lze navštívit obě v jednom krátkém, ale za to krásném výletu, u kterého by neměla chybět ani návštěva dalších přilehlých, skalních útvarů a rozhodně ne návštěva půvabných, blízkých vodopádů."
   },
   {
-    "name": "Kdo napsal knihu Válka světů?",
+    "name": "Kde nalezneme tento zámek?",
     "imageName": "5.jpg",
     "options": {
-      "1": "H.G. Wells",
-      "2": "Jules Verne",
-      "3": "Arthur Conan Doyle"
+      "1": "Frýdlant nad Ostravicí",
+      "2": "Hejnice",
+      "3": "Frýdlant v Čechách"
     },
-    "correct": "1"
+    "correct": "3",
+    "incorrectStatus": "Bohužej ne, jedná se o zámek Frýdlant, na kterém ve své době sídlil, mimo jiné osobnosti, i Albrecht z Valdštejna. K výletu za touto památkou, rozhodně doporučujeme přidat i zámecký park, pivovar a zdejší křížovou cestu."
   },
   {
-    "name": "Který z těchto filmů nezískal Oscara za nejlepší film?",
+    "name": "O jakou památku se jedná?",
     "imageName": "6.jpg",
     "options": {
-      "1": "Forrest Gump",
-      "2": "The Godfather",
-      "3": "The Shawshank Redemption"
+      "1": "Notre Dáme",
+      "2": "Hejnický klášter",
+      "3": "Zámek Nové město pod Smrkem"
     },
-    "correct": "3"
-  },
-  {
-    "name": "Kdo je autorem této sochy?",
-    "imageName": "7.jpg",
-    "options": {
-      "1": "Michelangelo",
-      "2": "Leonardo da Vinci",
-      "3": "Donatello"
-    },
-    "correct": "1"
-  },
-  {
-    "name": "Kde se nachází tato hora?",
-    "imageName": "8.jpg",
-    "options": {
-      "1": "Himaláje",
-      "2": "Andy",
-      "3": "Alpy"
-    },
-    "correct": "3"
-  },
-  {
-    "name": "Kdo je to?",
-    "imageName": "9.jpg",
-    "options": {
-      "1": "Steve Jobs",
-      "2": "Bill Gates",
-      "3": "Mark Zuckerberg"
-    },
-    "correct": "2"
-  },
-  {
-    "name": "Jaký je název tohoto obrazu?",
-    "imageName": "10.jpg",
-    "options": {
-      "1": "The Persistence of Memory",
-      "2": "The Scream",
-      "3": "The Starry Night"
-    },
-    "correct": "3"
+    "correct": "2",
+    "incorrectStatus": "Bohužel ne, jedná se o klášter v Hejnicích, který byl založen v roce 1692 při poutním gotickém kostele, kde se dle zdejší legendy chudému řemeslníkovi měli ve snu zjevit dva andělé. Fanoušci geocachingu si mohou na informacích vyžádat i “Zámecký Poklad”."
   }
 ]
