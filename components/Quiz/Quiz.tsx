@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react"
 import { quizStyles } from "./QuizStyles"
 import { StatusBar } from "expo-status-bar"
-import { Text, View, Button } from "react-native"
+import { Text, ScrollView, Button } from "react-native"
 import { Image } from "expo-image"
 import { useAssets } from "expo-asset"
 import data from "../../questions.json"
-import { quizImages } from "../../helpers/quizImages"
+import { blurhash, quizImages } from "../../helpers/quizImages"
 import { getPoints, incrementPoints } from "../../helpers/quizPoints"
 
 const defaultButtonColors = ["dodgerblue", "dodgerblue", "dodgerblue"]
-
-const blurhash =
-  "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj["
 
 export default function Quiz() {
   const [randomIndex, setRandomIndex] = useState<number>(getRandomIndex())
@@ -89,7 +86,12 @@ export default function Quiz() {
   }
 
   return (
-    <View style={quizStyles.container}>
+    <ScrollView
+      style={quizStyles.container}
+      contentContainerStyle={{
+        rowGap: 12,
+      }}
+    >
       <Text style={quizStyles.pointsTextWrapper}>
         <Text>Body: </Text>
         <Text style={quizStyles.pointsTextBold}>{points}</Text>
@@ -124,7 +126,9 @@ export default function Quiz() {
         <Button title="Další otázka" onPress={getNewQuestion} />
       )}
 
+      <Text style={quizStyles.bottomSpacer} />
+
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
   )
 }

@@ -4,10 +4,8 @@ export const quizStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    paddingTop: 64,
     paddingHorizontal: 16,
-    paddingVertical: 16,
-    gap: 12,
+    paddingVertical: 24,
   },
 
   image: {
@@ -31,5 +29,9 @@ export const quizStyles = StyleSheet.create({
     marginBottom: "auto",
     fontWeight: "bold",
     fontSize: 16,
+  },
+
+  bottomSpacer: {
+    marginBottom: 24,
   },
 })
