@@ -100,7 +100,15 @@ export default function Quiz() {
 
       {randomImage ? (
         <Image
-          style={quizStyles.image}
+          style={[
+            quizStyles.image,
+            {
+              aspectRatio:
+                randomImage.width && randomImage.height
+                  ? randomImage.width / randomImage.height
+                  : 1,
+            },
+          ]}
           source={{ uri: randomImage.uri }}
           contentFit="contain"
           placeholder={blurhash}

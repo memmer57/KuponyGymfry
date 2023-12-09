@@ -9,9 +9,9 @@ export const quizStyles = StyleSheet.create({
   },
 
   image: {
-    backgroundColor: "#fff",
+    width: "100%",
+    height: undefined,
     marginBottom: 16,
-    height: 220,
   },
 
   pointsTextWrapper: {

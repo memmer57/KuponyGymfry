@@ -5,7 +5,8 @@ import Ionicons from "@expo/vector-icons/Ionicons"
 import HomePage from "./app/Home"
 import QuizPage from "./app/Quiz"
 import MapPage from "./app/Map"
-import { Text, View } from "react-native"
+import CitationsPage from "./app/Citations"
+import CouponsPage from "./app/Coupons"
 
 const Drawer = createDrawerNavigator()
 
@@ -49,7 +50,7 @@ export default function App() {
         />
         <Drawer.Screen
           name="Kupóny"
-          component={QuizPage}
+          component={CouponsPage}
           options={{
             drawerIcon: ({ focused, size }) => (
               <Ionicons
@@ -75,7 +76,7 @@ export default function App() {
         />
         <Drawer.Screen
           name="Citace"
-          component={MapPage}
+          component={CitationsPage}
           options={{
             drawerIcon: ({ focused, size }) => (
               <Ionicons

@@ -8,8 +8,9 @@ export const homeStyles = StyleSheet.create({
     marginBottom: 32,
   },
   image: {
+    width: "100%",
+    height: undefined,
     marginBottom: 16,
-    height: 220,
   },
   greeting: {
     fontSize: 22,
