@@ -39,7 +39,7 @@ export default function Coupons() {
                 points={coupon.points}
                 code={coupon.code}
               />
-              {index + 1 < couponsAvailable && (
+              {index + 1 < data.length && (
                 <CouponCard
                   title={data[index + 1].title}
                   description={data[index + 1].description}
