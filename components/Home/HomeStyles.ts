@@ -5,7 +5,7 @@ export const homeStyles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     paddingHorizontal: 16,
-    marginBottom: 32,
+    paddingBottom: 32,
   },
   image: {
     width: "100%",

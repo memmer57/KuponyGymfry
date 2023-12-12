@@ -36,7 +36,9 @@ export default function Home() {
 
   return (
     <View style={homeStyles.container}>
-      <Text style={homeStyles.greeting}>Vítejte v Jizerských Bučinách!</Text>
+      <Text style={homeStyles.greeting}>
+        Vítejte v Jizerskohorských bučinách!
+      </Text>
       <Text style={homeStyles.stats}>Vaše statistiky:</Text>
       <Text style={homeStyles.points}>
         Počet bodů: <Text style={homeStyles.bold}>{points}</Text>
@@ -47,7 +49,7 @@ export default function Home() {
       </Text>
       {randomImage ? (
         <View>
-          <Text>I takto vypadají Jizerské Bučiny: </Text>
+          <Text>I takto vypadají Jizerskohorské bučiny: </Text>
           <Image
             style={[
               homeStyles.image,

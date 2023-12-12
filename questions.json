@@ -30,7 +30,7 @@
       "3": "Smrk"
     },
     "correct": "1",
-    "incorrectStatus": "Bohužel ne, správnou odpovědí je Ořešník, ze kterého se vám naskytne krásný výhled na přilehlé město Hejnice. Návštěvu je vhodné je zkombinovat ještě s výletem kolem Štolpišských vodopádů a vstupem do zdejšího kláštěra."
+    "incorrectStatus": "Bohužel ne, správnou odpovědí je Ořešník, ze kterého se vám naskytne krásný výhled na přilehlé město Hejnice. Návštěvu je vhodné je zkombinovat ještě s výletem kolem Štolpišských vodopádů a se vstupem do zdejšího kostela."
   },
   {
     "name": "Které dvě vyhlídky a vodopády poblíž nich, mohou být znázorněné na fotkách?",
@@ -52,17 +52,17 @@
       "3": "Frýdlant v Čechách"
     },
     "correct": "3",
-    "incorrectStatus": "Bohužej ne, jedná se o zámek Frýdlant, na kterém ve své době sídlil, mimo jiné osobnosti, i Albrecht z Valdštejna. K výletu za touto památkou, rozhodně doporučujeme přidat i zámecký park, pivovar a zdejší křížovou cestu."
+    "incorrectStatus": "Bohužel ne, jedná se o zámek Frýdlant, na kterém ve své době sídlil, mimo jiné osobnosti, i Albrecht z Valdštejna. K výletu za touto památkou, rozhodně doporučujeme přidat i zámecký park, pivovar a zdejší křížovou cestu."
   },
   {
     "name": "O jakou památku se jedná?",
     "imageName": "6.jpg",
     "options": {
       "1": "Notre Dáme",
-      "2": "Hejnický klášter",
+      "2": "Kostel Navštívení Panny Marie",
       "3": "Zámek Nové město pod Smrkem"
     },
     "correct": "2",
-    "incorrectStatus": "Bohužel ne, jedná se o klášter v Hejnicích, který byl založen v roce 1692 při poutním gotickém kostele, kde se dle zdejší legendy chudému řemeslníkovi měli ve snu zjevit dva andělé. Fanoušci geocachingu si mohou na informacích vyžádat i “Zámecký Poklad”."
+    "incorrectStatus": "Bohužel ne, jedná se o Kostel Navštívení Panny Marie v Hejnicích, který byl založen v roce 1692 při poutním gotickém kostele, kde se dle zdejší legendy chudému řemeslníkovi měli ve snu zjevit dva andělé. Fanoušci geocachingu si mohou na informacích vyžádat i “Zámecký Poklad”."
   }
 ]

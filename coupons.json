@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Náhodný kupón",
+    "description": "Jste milovníkem překvapení? Kupte si náhodný kupón! Po zakoupení této položky obdržítě náhodně vylosovaný kupón v hodnotě 5–30 kreditů.",
+    "points": 5,
+    "code": "234567890"
+  },
+  {
+    "title": "Turistický průvodce",
+    "description": "Získejte vlastního turistického průvodce v kterémkoliv z přilehlých informačních center, zcela zdarma!",
+    "points": 2,
+    "code": "567890123"
+  },
+  {
+    "title": "Kává / čaj – grátis",
+    "description": "Při uplatnění tohoto kupónu získáte malou kávu nebo čaj, v podniku Bike&Coffee House, zcela grátis.",
+    "points": 5,
+    "code": "234567890"
+  },
+  {
+    "title": "Rakvička se šlehačkou – grátis",
+    "description": "Vychutnejte si výbornou rakvičku se šlehačnou v cukrárně U kostela v Hejnicích!",
+    "points": 5,
+    "code": "345678901"
+  },
+  {
+    "title": "Pivní degustační set",
+    "description": "Získejte slevu 33 % na degustační set v pivovaru Albrecht.",
+    "points": 10,
+    "code": "285714285"
+  },
+  {
+    "title": "1 + 1 pivo zdarma",
+    "description": "Kupte si jedno pivo dle výběru s tímto kupónem a získáté druhé pivo (0,3l) zdarma. Lze uplatnit v podnicích: Hausmanka U Kozy, Myslivecké Zátiší a Hospoda U Cimpla",
+    "points": 10,
+    "code": "987654321"
+  },
+  {
+    "title": "Zdarma vstup do kostela Navštívení Panny Marie",
+    "description": "S tímto kupónem se vám otevřou dveře kostela Navštívení Panny Marie v Hejnicích. Tento jedinečný zážitek si nenechte ujít!",
+    "points": 25,
+    "code": "789012345"
+  },
+  {
+    "title": "Dárkový poukaz 200 Kč v internetovém obchodě Alza",
+    "description": "Získejte poukaz na 200 Kč na libovolné zboží na stránkách obchodu Alza.cz.",
+    "points": 100,
+    "code": "890123456"
+  }
+]

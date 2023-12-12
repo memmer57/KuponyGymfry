@@ -1,34 +1,41 @@
 {
   "expo": {
-    "name": "KuponyGymfry",
-    "slug": "KuponyGymfry",
+    "name": "Bučiny",
+    "slug": "buciny",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "plugins": [
+      "./plugins/android-manifest.plugin.js"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "userInterfaceStyle": "dark",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.memmer.KuponyGymfry"
+      "package": "com.memmer.Buciny"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "901aaa2d-1339-40fb-9d37-e3322b8809d4"
+        "projectId": "64d9d41a-bc56-457a-a000-89edf1625df0"
       }
-    }
+    },
+    "owner": "memmer"
   }
 }

@@ -4,12 +4,10 @@ import { citationStyles } from "./CitationStyles"
 import { blurhash, quizImages } from "../../helpers/quizImages"
 import { Image } from "expo-image"
 import { useAssets } from "expo-asset"
-import { Dimensions } from "react-native"
+import data from "../../citations.json"
 
 export default function Citations() {
   const [assets] = useAssets(quizImages)
-
-  const screenWidth = Dimensions.get("window").width
 
   return (
     <ScrollView
@@ -18,22 +16,28 @@ export default function Citations() {
     >
       {assets
         ? assets.map((asset, index) => (
-            <Image
-              key={index}
-              style={[
-                citationStyles.image,
-                {
-                  aspectRatio:
-                    asset.width && asset.height
-                      ? asset.width / asset.height
-                      : 1,
-                },
-              ]}
-              source={{ uri: asset.uri }}
-              placeholder={blurhash}
-              transition={500}
-              focusable={true}
-            />
+            <View style={citationStyles.citationContainer} key={index}>
+              <Image
+                style={[
+                  citationStyles.image,
+                  {
+                    aspectRatio:
+                      asset.width && asset.height
+                        ? asset.width / asset.height
+                        : 1,
+                  },
+                ]}
+                source={{ uri: asset.uri }}
+                placeholder={blurhash}
+                transition={500}
+                focusable={true}
+              />
+              {data[index].map((text, i) => (
+                <Text key={i} style={citationStyles.text}>
+                  {text}
+                </Text>
+              ))}
+            </View>
           ))
         : null}
     </ScrollView>
