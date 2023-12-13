@@ -1,6 +1,5 @@
-import React, { useState } from "react"
-import { View, Text, TouchableOpacity } from "react-native"
-import { couponCardStyles } from "./CouponCardStyles"
+import { View, Text } from "react-native"
+import { couponCardStyles as styles } from "./CouponCardStyles"
 import Ionicons from "@expo/vector-icons/Ionicons"
 
 interface IProps {
@@ -11,26 +10,18 @@ interface IProps {
 }
 
 export default function CouponCard(props: IProps) {
-  const [isPopupOpen, setIsPopupOpen] = useState(false)
-
-  const handleCardClick = () => {
-    setIsPopupOpen(true)
-  }
-
   return (
-    <View style={couponCardStyles.couponCard}>
-      <Text style={couponCardStyles.couponTitle}>{props.title}</Text>
-      <Text style={couponCardStyles.couponDescription}>
-        {props.description}
-      </Text>
-      <View style={couponCardStyles.icon}>
+    <View style={styles.couponCard}>
+      <Text style={styles.couponTitle}>{props.title}</Text>
+      <Text style={styles.couponDescription}>{props.description}</Text>
+      <View style={styles.icon}>
         <Ionicons name="md-barcode-outline" size={70} color="black" />
       </View>
-      <Text style={couponCardStyles.couponPoints}>
-        Potřebné body: <Text style={couponCardStyles.bold}>{props.points}</Text>
+      <Text style={styles.couponPoints}>
+        Potřebné body: <Text style={styles.bold}>{props.points}</Text>
       </Text>
-      <Text style={couponCardStyles.couponCode}>
-        Kód: <Text style={couponCardStyles.bold}>{props.code}</Text>
+      <Text style={styles.couponCode}>
+        Kód: <Text style={styles.bold}>{props.code}</Text>
       </Text>
     </View>
   )

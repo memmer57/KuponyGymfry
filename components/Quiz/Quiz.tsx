@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { quizStyles } from "./QuizStyles"
+import { quizStyles as styles } from "./QuizStyles"
 import { StatusBar } from "expo-status-bar"
 import { Text, ScrollView, Button } from "react-native"
 import { Image } from "expo-image"
@@ -87,21 +87,21 @@ export default function Quiz() {
 
   return (
     <ScrollView
-      style={quizStyles.container}
+      style={styles.container}
       contentContainerStyle={{
         rowGap: 12,
       }}
     >
-      <Text style={quizStyles.pointsTextWrapper}>
+      <Text style={styles.pointsTextWrapper}>
         <Text>Body: </Text>
-        <Text style={quizStyles.pointsTextBold}>{points}</Text>
+        <Text style={styles.pointsTextBold}>{points}</Text>
       </Text>
       <Text>{questionData.name}</Text>
 
       {randomImage ? (
         <Image
           style={[
-            quizStyles.image,
+            styles.image,
             {
               aspectRatio:
                 randomImage.width && randomImage.height
@@ -128,13 +128,13 @@ export default function Quiz() {
         />
       ))}
 
-      <Text style={quizStyles.statusText}>{statusText}</Text>
+      <Text style={styles.statusText}>{statusText}</Text>
 
       {answerSelected && (
         <Button title="Další otázka" onPress={getNewQuestion} />
       )}
 
-      <Text style={quizStyles.bottomSpacer} />
+      <Text style={styles.bottomSpacer} />
 
       <StatusBar style="auto" />
     </ScrollView>

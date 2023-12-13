@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import { View, Text } from "react-native"
-import { homeStyles } from "./HomeStyles"
+import { homeStyles as styles } from "./HomeStyles"
 import { blurhash, quizImages } from "../../helpers/quizImages"
 import { Image } from "expo-image"
 import { useAssets } from "expo-asset"
@@ -35,24 +35,22 @@ export default function Home() {
   }
 
   return (
-    <View style={homeStyles.container}>
-      <Text style={homeStyles.greeting}>
-        Vítejte v Jizerskohorských bučinách!
+    <View style={styles.container}>
+      <Text style={styles.greeting}>Vítejte v Jizerskohorských bučinách!</Text>
+      <Text style={styles.stats}>Vaše statistiky:</Text>
+      <Text style={styles.points}>
+        Počet bodů: <Text style={styles.bold}>{points}</Text>
       </Text>
-      <Text style={homeStyles.stats}>Vaše statistiky:</Text>
-      <Text style={homeStyles.points}>
-        Počet bodů: <Text style={homeStyles.bold}>{points}</Text>
-      </Text>
-      <Text style={homeStyles.coupons}>
+      <Text style={styles.coupons}>
         Počet dostupných kupónů:{" "}
-        <Text style={homeStyles.bold}>{couponsAvailable}</Text>
+        <Text style={styles.bold}>{couponsAvailable}</Text>
       </Text>
       {randomImage ? (
         <View>
           <Text>I takto vypadají Jizerskohorské bučiny: </Text>
           <Image
             style={[
-              homeStyles.image,
+              styles.image,
               {
                 aspectRatio:
                   randomImage.width && randomImage.height

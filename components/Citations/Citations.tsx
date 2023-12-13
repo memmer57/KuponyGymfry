@@ -1,6 +1,6 @@
 import React from "react"
 import { ScrollView, Text, View } from "react-native"
-import { citationStyles } from "./CitationStyles"
+import { citationStyles as styles } from "./CitationStyles"
 import { blurhash, quizImages } from "../../helpers/quizImages"
 import { Image } from "expo-image"
 import { useAssets } from "expo-asset"
@@ -11,15 +11,15 @@ export default function Citations() {
 
   return (
     <ScrollView
-      style={citationStyles.container}
+      style={styles.container}
       contentContainerStyle={{ justifyContent: "center" }}
     >
       {assets
         ? assets.map((asset, index) => (
-            <View style={citationStyles.citationContainer} key={index}>
+            <View style={styles.citationContainer} key={index}>
               <Image
                 style={[
-                  citationStyles.image,
+                  styles.image,
                   {
                     aspectRatio:
                       asset.width && asset.height
@@ -33,13 +33,15 @@ export default function Citations() {
                 focusable={true}
               />
               {data[index].map((text, i) => (
-                <Text key={i} style={citationStyles.text}>
+                <Text key={i} style={styles.text}>
                   {text}
                 </Text>
               ))}
             </View>
           ))
         : null}
+
+      <Text style={styles.authorText}>Made with ❤️ by Matěj Emmer</Text>
     </ScrollView>
   )
 }

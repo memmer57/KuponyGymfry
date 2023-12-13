@@ -17,4 +17,10 @@ export const citationStyles = StyleSheet.create({
   text: {
     marginBottom: 4,
   },
+  authorText: {
+    fontWeight: "bold",
+    fontSize: 16,
+    marginBottom: 42,
+    textAlign: "center",
+  },
 })

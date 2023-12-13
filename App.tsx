@@ -7,6 +7,7 @@ import QuizPage from "./app/Quiz"
 import MapPage from "./app/Map"
 import CitationsPage from "./app/Citations"
 import CouponsPage from "./app/Coupons"
+import QRReaderPage from "./app/QRReader"
 
 const Drawer = createDrawerNavigator()
 
@@ -55,6 +56,19 @@ export default function App() {
             drawerIcon: ({ focused, size }) => (
               <Ionicons
                 name="md-barcode-outline"
+                size={size}
+                color={focused ? "green" : "#aaa"}
+              />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="QR čtečka"
+          component={QRReaderPage}
+          options={{
+            drawerIcon: ({ focused, size }) => (
+              <Ionicons
+                name="md-qr-code"
                 size={size}
                 color={focused ? "green" : "#aaa"}
               />

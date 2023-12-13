@@ -1,38 +1,16 @@
 import { View } from "react-native"
 import CouponCard from "./CouponCard"
-import { couponsStyles } from "./CouponsStyles"
+import { couponsStyles as styles } from "./CouponsStyles"
 import { ScrollView } from "react-native-gesture-handler"
 import data from "../../coupons.json"
-import { useState, useEffect } from "react"
-import { getPoints } from "../../helpers/quizPoints"
-import { pointsForCoupon } from "../../helpers/constants"
 
 export default function Coupons() {
-  const [points, setPoints] = useState<number>(0)
-  const [couponsAvailable, setCouponsAvailable] = useState<number>(0)
-
-  const fetchPoints = async () => {
-    const pointsValue = await getPoints()
-    setPoints(pointsValue)
-    setCouponsAvailable(Math.floor(pointsValue / pointsForCoupon))
-  }
-
-  useEffect(() => {
-    fetchPoints()
-
-    const interval = setInterval(() => {
-      fetchPoints()
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [])
-
   return (
-    <ScrollView style={couponsStyles.container}>
+    <ScrollView style={styles.container}>
       {data.map(
         (coupon, index) =>
           index % 2 === 0 && (
-            <View key={index} style={couponsStyles.row}>
+            <View key={index} style={styles.row}>
               <CouponCard
                 title={coupon.title}
                 description={coupon.description}
